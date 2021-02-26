@@ -13,7 +13,7 @@ html {
 body {
   height: inherit;
   background: url(./images/bg-pattern-desktop.svg) no-repeat;
-  background-size: 57%;
+  background-size: 60%;
 }
 
 main {
@@ -29,7 +29,7 @@ main {
 header {
   display: -ms-grid;
   display: grid;
-  padding: 4rem 10rem;
+  padding: 4rem 11rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -40,13 +40,13 @@ header {
   grid-column: 1;
   -ms-grid-row: 2;
   grid-row: 2;
-  margin: 6rem 10rem;
+  margin: 6rem 11rem;
   display: -ms-grid;
   display: grid;
   gap: 2rem;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  padding-right: 9rem;
+  padding-right: 11rem;
 }
 
 .soon h1 {
@@ -71,7 +71,7 @@ header {
 
 .mail input {
   border: 1px solid #ffadad;
-  height: 3rem;
+  height: 4rem;
   padding: 0 1.5rem;
   border-radius: 2rem;
   width: 100%;
@@ -179,7 +179,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1650px) {
   body {
     background-size: contain;
   }
