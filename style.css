@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background: url(./images/bg-pattern-desktop.svg) no-repeat;
+  background-size: 57%;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  height: inherit;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  padding: 4rem 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.soon {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: 6rem 10rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding-right: 9rem;
+}
+
+.soon h1 {
+  font-size: 4rem;
+  letter-spacing: 1.5rem;
+  line-height: 4.5rem;
+}
+
+.soon h1 span {
+  font-weight: 100;
+  color: #ce9797;
+}
+
+.soon p {
+  line-height: 2rem;
+  color: #ce9797;
+}
+
+.mail {
+  position: relative;
+}
+
+.mail input {
+  border: 1px solid #ffadad;
+  height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.mail input::-webkit-input-placeholder {
+  color: #b9acac;
+}
+
+.mail input:-ms-input-placeholder {
+  color: #b9acac;
+}
+
+.mail input::-ms-input-placeholder {
+  color: #b9acac;
+}
+
+.mail input::placeholder {
+  color: #b9acac;
+}
+
+.mail button {
+  border: none;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 2rem;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-box-shadow: 0 0.8rem 1.4rem 0 rgba(255, 173, 173, 0.5);
+          box-shadow: 0 0.8rem 1.4rem 0 rgba(255, 173, 173, 0.5);
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  padding: 0 3rem;
+  height: 100%;
+}
+
+.mail button:hover {
+  background: linear-gradient(135deg, #ee8c8c, #f8bfbf);
+}
+
+.image {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  grid-row: span 2;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 2000px) {
+  body {
+    background-size: 70%;
+  }
+  header {
+    padding: 2rem 18rem;
+  }
+  header img {
+    width: 15rem;
+  }
+  .soon {
+    margin: 6rem 18rem;
+    padding-right: 14rem;
+  }
+  .soon h1 {
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    line-height: 8rem;
+  }
+  .soon p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .mail input {
+    height: 5rem;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+    background: none;
+  }
+  .mail button {
+    border-radius: 3rem;
+    padding: 0 5rem;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  body {
+    background-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  body {
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  header {
+    padding: 2rem 8rem;
+  }
+  .soon {
+    margin: 6rem 8rem;
+    padding-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  header {
+    padding: 2rem 5rem;
+  }
+  .soon {
+    margin: 6rem 5rem;
+    padding-right: 0rem;
+  }
+  .soon h1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    line-height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px), (max-height: 500px) {
+  body {
+    height: unset;
+    background: unset;
+    text-align: center;
+  }
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  header {
+    margin: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 3rem 3rem;
+  }
+  .image {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .image img {
+    content: url(./images/hero-mobile.jpg);
+  }
+  .soon {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    margin: 4rem 3rem;
+  }
+  .mail {
+    padding: 0 5rem;
+  }
+  .mail button {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 2rem;
+  }
+  header img {
+    width: 7rem;
+  }
+  .soon {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    margin: 3rem 2rem;
+  }
+  .soon h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.8rem;
+    line-height: 3rem;
+  }
+  .soon p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .mail {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
