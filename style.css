@@ -75,6 +75,7 @@ header {
   padding: 0 1.5rem;
   border-radius: 2rem;
   width: 100%;
+  background: none;
 }
 
 .mail input::-webkit-input-placeholder {
